@@ -1,0 +1,10 @@
+steps:
+- uses: actions/checkout@main
+- uses: codecov/codecov-action@v4
+  with:
+    fail_ci_if_error: true # optional (default = false)
+    files: ./coverage1.xml,./coverage2.xml # optional
+    flags: unittests # optional
+    name: codecov-umbrella # optional
+    token: CODECOV_TOKEN=b695f40b-7d36-464c-8cc8-cd4a1f82098b # required
+    verbose: true # optional (default = false)
