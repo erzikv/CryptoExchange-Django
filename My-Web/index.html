@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Vladislav Erzikov</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 50px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page loaded successfully");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Vladislav Erzikov</h1>
+        <p>Frontend Developer | Motion Graphics | Photo & Video Editing</p>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="console.log('Navigating to About section')">About</a></li>
+                <li><a href="#portfolio" onclick="console.log('Navigating to Portfolio section')">Portfolio</a></li>
+                <li><a href="#contact" onclick="console.log('Navigating to Contact section')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! I specialize in web design, logo creation, photo editing, and video production. With years of experience, I bring creativity and quality to every project.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <img src="" alt="Project 1" onclick="console.log('Clicked on Project 1')">
+            <img src="portfolio2.jpg" alt="Project 2" onclick="console.log('Clicked on Project 2')">
+            <img src="portfolio3.jpg" alt="Project 3" onclick="console.log('Clicked on Project 3')">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>📩 erzikvv@gmail.com</p>
+        <p>📸 Instagram: <a href="" onclick="console.log('Instagram link clicked')">@3rzikvlad</a></p>
+        <p>💼 Fiverr: <a href="https://www.fiverr.com/yourusername" onclick="console.log('Fiverr link clicked')">fiverr.com/yourusername</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vladislav Erzikov | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
